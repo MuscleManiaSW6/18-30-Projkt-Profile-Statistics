@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blue;
+}
+
+.stat-container {
+    margin: 20px;
+    border: dotted white;
+    min-width: 200px;
+    min-height: 100px;
+    position: relative;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column; 
+    }
+}
+
+.icon {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.counter {
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.stat-container h4 {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
